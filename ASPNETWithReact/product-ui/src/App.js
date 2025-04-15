@@ -5,7 +5,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Certifique-se de que a URL esteja correta
+
     axios.get('https://localhost:7171/api/products') 
       .then(res => {
         console.log('Produtos recebidos:', res.data);  
